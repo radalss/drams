@@ -1,0 +1,48 @@
+:root{
+    --bg:#0e0e0e;
+    --card:#1a1a1a;
+    --accent:#e50914;
+    --text:#eee;
+    --sub:#aaa;
+    --radius:8px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Roboto,sans-serif}
+  body{background:var(--bg);color:var(--text);}
+  a{color:var(--text);text-decoration:none}
+  img{max-width:100%;display:block}
+  
+  .topbar{
+    position:sticky;top:0;z-index:10;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:.6rem 1.2rem;background:#000000aa;backdrop-filter:blur(8px);
+  }
+  .logo{font-size:1.4rem;font-weight:700}
+  .logo sup{font-size:.6rem;margin-left:2px}
+  .search-box{display:flex;gap:.5rem}
+  .search-box input{padding:.5rem 1rem;border:0;border-radius:var(--radius);width:220px}
+  .search-box button{padding:.5rem 1rem;border:0;border-radius:var(--radius);background:var(--accent);color:#fff;cursor:pointer}
+  
+  #hero{text-align:center;padding:3rem 1rem 2rem}
+  #hero h1{font-size:2.2rem}
+  #hero p{color:var(--sub);margin-top:.5rem}
+  
+  .row-title{padding:1rem 1rem .5rem;font-size:1.1rem}
+  .row{display:flex;gap:.6rem;overflow-x:auto;padding:0 1rem 1rem;scroll-behavior:smooth}
+  .row::-webkit-scrollbar{height:6px}
+  .row::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px}
+  
+  .card{flex:0 0 150px;background:var(--card);border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer;transition:transform .2s}
+  .card:hover{transform:scale(1.05)}
+  .card img{height:220px;object-fit:cover}
+  .card .play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:44px;height:44px;background:#000000aa;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    opacity:0;transition:opacity .2s
+  }
+  .card:hover .play{opacity:1}
+  .play::before{content:'▶';color:#fff;font-size:18px;margin-left:3px}
+  .meta{padding:.5rem}
+  .meta .title{font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .meta .eps{font-size:.75rem;color:var(--sub)}
+  
+  footer{text-align:center;padding:2rem 1rem;font-size:.8rem;color:var(--sub)}

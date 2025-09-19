@@ -1,0 +1,15 @@
+{
+    "name": "drambox-web",
+    "version": "1.0.0",
+    "description": "DramBox search + watch web UI",
+    "main": "api/server.js",
+    "scripts": {
+      "dev": "node api/server.js",
+      "start": "node api/server.js"
+    },
+    "dependencies": {
+      "axios": "^1.7.0",
+      "cors": "^2.8.5",
+      "express": "^4.19.2"
+    }
+  }

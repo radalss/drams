@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>DramBoxDB Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">DramBox<sup>Clone</sup></div>
+    <div class="search-box">
+      <input id="keyword" type="text" placeholder="Search dramas…" autocomplete="off"/>
+      <button onclick="search()">Search</button>
+    </div>
+  </header>
+
+  <section id="hero">
+    <h1>Unlimited Short Dramas</h1>
+    <p>Watch the latest trending mini-series in HD</p>
+  </section>
+
+  <main>
+    <h2 class="row-title">🔥 Latest Dramas</h2>
+    <div class="row" id="latest-row"></div>
+
+    <h2 class="row-title">📺 Search Results</h2>
+    <div class="row" id="search-row"></div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> DramBox Clone – unofficial fan site
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
